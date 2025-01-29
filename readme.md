@@ -3,6 +3,9 @@
 *	фильтрация out/in = in;
 *	перевед поле noted_date в формат ‘yyyy-MM-dd’ с типом данных date;
 
+## Исходный файл
+``` IOT-temp.csv ``` 
+
 ## 1. Запуск контейнера
 
 ```
@@ -16,3 +19,8 @@ docker run --name nifi \
 ```
 ## 2. Работа с NIFI
 UI: https://localhost:8443
+
+## 3. Процессоры 
+См. файл ``` etl_proc_hw_3.json ``` 
+
+
