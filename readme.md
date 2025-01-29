@@ -23,4 +23,10 @@ UI: https://localhost:8443
 ## 3. Процессоры 
 См. файл ``` etl_proc_hw_3.json ``` 
 
+###
+* GetFile - чтение файла
+* Updaterecord - перевед поле noted_date в формат ‘yyyy-MM-dd’ с типом данных date
+* QueryRecord - фильтрация out/in = in
+* QueryRecord - вычисление 5 самых жарких и самых холодных дней
+
 
