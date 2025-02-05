@@ -34,6 +34,6 @@ UI: https://localhost:8443
 ### Процессор 4. Загрузка в локальную базу данных 
 
 ## Файлы
-* Исходный файл ``` IOT-temp_1.csv ```
+* Исходный файл ``` IOT-temp.csv ``` (поток 1), ``` IOT-temp_1.csv ``` (поток 2)
 * Драйвер для Postgress ``` Drivers/postgresql-42.5.0.jar ```
 * Flow definition ``` Flow_definition/hw_4 _part1.json ``` (поток 1), ``` Flow_definition/hw_4 _part2.json ``` (поток 2)
