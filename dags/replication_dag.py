@@ -82,7 +82,7 @@ def replicate_user_sessions():
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2023, 1, 1),  # Теперь работает благодаря импорту datetime
+    'start_date': datetime(2023, 1, 1), 
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
 }
