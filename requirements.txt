@@ -1,0 +1,5 @@
+pymongo
+psycopg2-binary
+faker
+apache-airflow-providers-mongo
+apache-airflow-providers-postgres
