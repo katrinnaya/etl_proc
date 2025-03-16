@@ -25,8 +25,10 @@
    - ``` mkdir plagins ```
 2. **Запуск контейнера:**
    - ``` docker-compose up -d ```
+
 2.1. **Провека:**
-Вводим ``` docker ps ``` и узнаем статус контейнеров. Контейнер ``` airflow-init ``` после того, как отработает пропадет из списка.
+
+Вводим ``` docker ps ``` и узнаем статус контейнеров. Контейнер ``` airflow-init ``` после того, как отработает, пропадет из списка.
 ```  
 CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS                   PORTS                      NAMES
 d79c3230b07c   apache/airflow:2.6.2   "/usr/bin/dumb-init …"   3 minutes ago   Up 3 minutes             8080/tcp                   airflow-scheduler
