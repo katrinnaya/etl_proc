@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta  # Импорт datetime и timedelta
+from datetime import datetime, timedelta  
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from pymongo import MongoClient
