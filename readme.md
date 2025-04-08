@@ -19,7 +19,7 @@ import pyspark.sql.functions as F
 * Чтение JSON
 * Развертывание вложенных структур
 * Сохранение в Parquet
-* Проверкf результатов
+* Проверка результатов
 #### 1. Чтение JSON
 ```
 df = spark.read.option("multiline", True).json("s3a://study-backet/storage/catalog_ex.json")
