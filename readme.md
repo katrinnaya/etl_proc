@@ -121,8 +121,8 @@ read_offers.show() # Показ первых нескольких строк д�
 +-------------+----------+----------+--------------------+--------------+-----+--------------------+-------------+---------+---------+
 ```
 ## Итог
-* Файл до парсинга https://github.com/katrinnaya/etl_proc/blob/hw_9/jsons/catalog_ex.json
-* Файлы после парсинга: https://github.com/katrinnaya/etl_proc/tree/hw_9/jsons/parquets
+* Файл до парсинга https://github.com/katrinnaya/etl_proc/blob/hw_9/jsons/catalog_ex.json , UI: ![before_parse](https://github.com/katrinnaya/etl_proc/blob/hw_9/images/before_parse.jpg)
+* Файлы после парсинга: https://github.com/katrinnaya/etl_proc/tree/hw_9/jsons/parquets , UI: ![after_parse](https://github.com/katrinnaya/etl_proc/blob/hw_9/images/after_parse.jpg)
 ### 1. Catalogs
 ```
 {"conditions":"Предложения действительны для Москвы, Переславль-Залесского и Костромской области. Информацию об ассортименте товаров, участвующих в акции, уточняйте в магазине. Количество товаров ограничено, не является публичной офертой.","date_end":"2020-06-12","date_start":"2020-06-05","id":"1234","image":"https://retailer1234.ru/catalogs/1234.jpg","is_main":true,"offers":["11111","22222","33333"],"target_regions":["Россия, Москва","Россия, Ярославская область, Переславль-Залесский","Россия, Костромская область, Островский район, село Адищево"],"target_shops":null}
