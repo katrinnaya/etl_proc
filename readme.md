@@ -121,4 +121,16 @@ read_offers.show() # Показ первых нескольких строк д�
 +-------------+----------+----------+--------------------+--------------+-----+--------------------+-------------+---------+---------+
 ```
 ## Итог
-* Файл до парсинга
+* Файл до парсинга https://github.com/katrinnaya/etl_proc/blob/hw_9/jsons/catalog_ex.json
+* Файлы после парсинга: https://github.com/katrinnaya/etl_proc/tree/hw_9/jsons/parquets
+### 1. Catalogs
+```
+{"conditions":"Предложения действительны для Москвы, Переславль-Залесского и Костромской области. Информацию об ассортименте товаров, участвующих в акции, уточняйте в магазине. Количество товаров ограничено, не является публичной офертой.","date_end":"2020-06-12","date_start":"2020-06-05","id":"1234","image":"https://retailer1234.ru/catalogs/1234.jpg","is_main":true,"offers":["11111","22222","33333"],"target_regions":["Россия, Москва","Россия, Ярославская область, Переславль-Залесский","Россия, Костромская область, Островский район, село Адищево"],"target_shops":null}
+{"conditions":"Предложения действительны в магазине по адресу: Владимир, улица Куйбышева, 26К","date_end":"2020-06-12","date_start":"2020-06-05","id":"5678","image":"https://retailer1234.ru/catalogs/1234.jpg","is_main":true,"offers":["22222","33333"],"target_regions":null,"target_shops":["Владимир, улица Куйбышева, 26К"]}
+```
+### 2. Offers
+```
+{"barcode":"7501031311309","date_end":"2020-06-10","date_start":"2020-06-05","description":"Молоко \"Домик в деревне\" 3,2% 0,93 л","discount_label":"1+1","id":"11111","image":"https://retailer1234.ru/offers/1234567.jpg","price_is_from":false,"price_new":50,"price_old":100}
+{"barcode":"3113097501031","date_end":null,"date_start":null,"description":"Огурцы маринованные \"Дядя Ваня\" 680 г","discount_label":null,"id":"22222","image":"https://retailer1234.ru/offers/5671234.jpg","price_is_from":false,"price_new":70,"price_old":75}
+{"barcode":"1097501031133","date_end":null,"date_start":null,"description":"Жевательная резинка Orbit в ассортименте","discount_label":null,"id":"33333","image":"https://retailer1234.ru/offers/10488.jpg","price_is_from":true,"price_new":10,"price_old":null}
+```
