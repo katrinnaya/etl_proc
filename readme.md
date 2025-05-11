@@ -12,15 +12,25 @@
    *  `dags` - для загрузки DAG-файла
 2. Добавляем файл `products.csv` в папку `input` текущего бакета
 ## Шаг 2
-Добавляем для сервисного аккаунта роли:
+1. Добавляем для сервисного аккаунта роли:
    * `managed-airflow.integrationProvider`
-   * `monitoring.editor` 
+   * `monitoring.editor`
+2. Создаем статический ключ доступа для подключения к  Object Storage    
 ## Шаг 3
 Создаем DAG-файл и загружаем в папку `dags` текущего бакета
 ## Шаг 4
 Создаем кластер Airflow 
 ## Шаг 5
-Подключение к UI
+1. Подключаемся к UI
+2. Настраиваем подключение к Yandex Object Storage через "Amazon Web Services" по параметрам статического ключа сервисного аккаунта
+2.1. Поле `Extra` заполняем:
+```
+{
+  "host": "https://storage.yandexcloud.net",
+  "region_name": "ru-central1",
+  "endpoint_url": "https://storage.yandexcloud.net"
+}
+```
 ## Шаг 6
 Запускаем ETL. Запускаем DAG `etl_products` вручную через Trigger DAG
 
