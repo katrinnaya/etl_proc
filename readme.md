@@ -12,8 +12,19 @@
    *  `dags` - для загрузки DAG-файла
 2. Добавляем файл `products.csv` в папку `input` текущего бакета
 ## Шаг 2
-Создаем для сервисного аккаунта статический ключ (для подключения Airflow к Object Storage)
+Добавляем для сервисного аккаунта роли:
+   * `managed-airflow.integrationProvider`
+   * `monitoring.editor` 
 ## Шаг 3
 Создаем DAG-файл и загружаем в папку `dags` текущего бакета
-## Шаг 
+## Шаг 4
 Создаем кластер Airflow 
+## Шаг 5
+Подключение к UI
+## Шаг 6
+Запускаем ETL. Запускаем DAG `etl_products` вручную через Trigger DAG
+
+## Шаг 7
+Проверяем результат
+
+В бакете bucket-for-etl/output/ появится файл filtered_products.csv с товарами, где in_stock=true.
