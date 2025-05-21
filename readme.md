@@ -10,16 +10,22 @@
 Добавляем сервисному аккаунта роль `editor` для управления YDB
 ## Шаг 2
 1. Создаем БД YDB с типом `Serverless`
+![ydb](https://github.com/katrinnaya/etl_proc/blob/hw_12/images/ydb.jpg)  
 2. Получаем параметры подключения и сохраняем значение для дальнейшего подключения
    * `Эндпоинт`
 ## Шаг 3
 Создаем через веб-интерфейс тестовую БД
+![db](https://github.com/katrinnaya/etl_proc/blob/hw_12/images/db.jpg)  
 ## Шаг 4
 1. Создаем Python-функцию `index.py`
 2. Создаем файл с зависимостями `requirements.txt`
 ## Шаг 5
 Настраиваем переменные окружения
-`YDB_ENDPOINT`
-`YDB_DATABASE`
+  * `YDB_ENDPOINT`
+  * `YDB_DATABASE`
+
+![func](https://github.com/katrinnaya/etl_proc/blob/hw_12/images/func.jpg)  
 ## Шаг 6
 Запускаем тест
+
+![test](https://github.com/katrinnaya/etl_proc/blob/hw_12/images/test.jpg)  
