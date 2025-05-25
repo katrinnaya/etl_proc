@@ -20,16 +20,23 @@
 * `dataproc.user`.
 # Шаг 2
 Создаем бакет `dataproc-bucket-for-etl` и помещаем в него скрипты `kafka-write.py` и `kafka-read-stream.py`
+![buc](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/buc.jpg) 
 Даем `FULL_CONTROL` разрешение сервисному аккаунту
 # Шаг 3
 Создаем кластер Managed Service for Kafka `dataproc-kafka`
+![kaf](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/kaf.jpg) 
 # Шаг 4
 Создаем топик `dataproc-kafka-topic` и создаем пользователя Kafka с разрешением на все топики
 # Шаг 5
 Создаем кластер Yandex Data Processing `dataproc-cluster`
+![dp](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/dp.jpg) 
 # Шаг 6
 Создаем задание со скриптом на запись и запускаем
+![wr](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/wr.jpg) 
 # Шаг 7
 Создаем задание со скриптом на чтение и запускаем
+![read](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/read.jpg) 
 # Шаг 8
 В бакете проверяем результат
+![res1](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/res1.jpg) 
+![res2](https://github.com/katrinnaya/etl_proc/blob/hw_13/images/res2.jpg) 
