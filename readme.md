@@ -19,11 +19,12 @@
 * `dataproc.agent`;
 * `dataproc.user`.
 # Шаг 2
-Создаем бакет `dataproc-bucket` и помещаем в него скрипты `kafka-write.py` и `kafka-read-stream.py`
+Создаем бакет `dataproc-bucket-for-etl` и помещаем в него скрипты `kafka-write.py` и `kafka-read-stream.py`
+Даем `FULL_CONTROL` разрешение сервисному аккаунту
 # Шаг 3
 Создаем кластер Managed Service for Kafka `dataproc-kafka`
 # Шаг 4
-Создаем топик `dataproc-kafka-topic`
+Создаем топик `dataproc-kafka-topic` и создаем пользователя Kafka с разрешением на все топики
 # Шаг 5
 Создаем кластер Yandex Data Processing `dataproc-cluster`
 # Шаг 6
