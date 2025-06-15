@@ -16,9 +16,12 @@
 ### Шаг 3
 Пишем Python-скрипт для создания датасета. См. файл `create_db` в папке `scripts`. Файл с датасетом `transactions_v2.csv` сохраняем локально
 ### Шаг 4
-Загружаем данные в YDB через YDB CLI
-4.1 Устанавливаем клиент
+Загружаем данные в YDB через YDB CLI.
+#### Шаг 4.1
+Устанавливаем клиент
 `curl -sSL https://install.ydb.tech/cli | bash`
-4.2 Устанавливаем утилиту
+#### Шаг 4.2
+Устанавливаем утилиту
 `curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash`
-4.3 Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` в папке `scripts`.
+#### Шаг 4.3
+Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` в папке `scripts`.
