@@ -21,7 +21,4 @@
 `curl -sSL https://install.ydb.tech/cli | bash`
 4.2 Устанавливаем утилиту
 `curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash`
-4.3 Авторизуемся в консоли Я.Облако
-`yc init`
-4.4 Получаем токен
-`yc iam create-token`
+4.3 Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` в папке `scripts`.
