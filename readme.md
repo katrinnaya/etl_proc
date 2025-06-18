@@ -24,7 +24,7 @@
 Устанавливаем утилиту
 `curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash`
 #### Шаг 4.3
-Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` в папке `scripts`.
+Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` или `upload_to_ydb.sh` в папке `scripts`.
 ### Шаг 5
 Создаем бакет `etl-bucket` в Object Storage 
 ### Шаг 6
@@ -38,17 +38,15 @@ Cоздаем два эндпоинта и настраиваем трансфе
 # Задание 2. Автоматизация работы с Yandex Data Processing при помощи Apache AirFlow
 ### Шаги для выполнения
 1. Создание кластера Managed Service for Apache Airflow
-2. Создание вручную кластер Data Proc
-3. Написание DAG для Airflow и PySpark-скрипта для обработки данных
-4. Загурзка данных в бакет
-5. Запуск DAG и проверка результатов
-6. Удаление кластера Data Proc
+2. Написание DAG для Airflow и PySpark-скрипта для обработки данных
+3. Загурзка данных в бакет
+4. Запуск DAG и проверка результатов
 
 ### Шаг 1
 Создаем кластер `airflow-etl-cluster`
 ### Шаг 2
-Создаем кластер `dataproc-cluster`
+Пишем необходимые скрипты. См. файлы `transaction_processing_dag.py` и `process_transactions.py` в папке `scripts`.
 ### Шаг 3
-Пишем необходимые скрипты. ВСТАВИТЬ НАЗВАНИЕ ФАЙЛОВ 
-### Шаг 4
 Загружаем файл с датасетом `transactions_v2.csv` и необходимые скрипты в бакет 
+### Шаг 4
+Запускаем DAG
