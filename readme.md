@@ -13,6 +13,7 @@
 Создаем базу данных Yandex Database `etl-db`
 ### Шаг 2
 Создаем таблицу в YDB через интерфейс
+![ydb](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/ydb.jpg) 
 ### Шаг 3
 Пишем Python-скрипт для создания датасета. См. файл `create_db` в папке `scripts`. Файл с датасетом `transactions_v2.csv` сохраняем локально
 ### Шаг 4
@@ -27,13 +28,14 @@
 Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` или `upload_to_ydb.sh` в папке `scripts`.
 ### Шаг 5
 Создаем бакет `etl-bucket` в Object Storage 
+![back](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/back.jpg) 
 ### Шаг 6
-Cоздаем два эндпоинта и настраиваем трансфер.
-
-Активируем трансфер
-
+Cоздаем два эндпоинта и активируем трансфер
+![endp](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/endp.jpg) 
+![transfer](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/transfer.jpg) 
 ### Шаг 7
 Заходим в бакет и проверяем, что появился файл с данными из базы данных
+![back2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/back2.jpg) 
 
 # Задание 2. Автоматизация работы с Yandex Data Processing при помощи Apache AirFlow
 ### Шаги для выполнения
@@ -41,7 +43,6 @@ Cоздаем два эндпоинта и настраиваем трансфе
 2. Написание DAG для Airflow и PySpark-скрипта для обработки данных
 3. Загрузка данных в бакет
 4. Запуск DAG и проверка результатов
-
 ### Шаг 1
 Создаем кластер `airflow-etl-cluster`
 ### Шаг 2
