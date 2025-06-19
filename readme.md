@@ -17,7 +17,7 @@
 ### Шаг 3
 Пишем Python-скрипт для создания датасета. См. файл `create_db` в папке `scripts`. Файл с датасетом `transactions_v2.csv` сохраняем локально
 ### Шаг 4
-Загружаем данные в YDB через YDB CLI.
+Загружаем данные в YDB через YDB CLI
 #### Шаг 4.1
 Устанавливаем клиент
 `curl -sSL https://install.ydb.tech/cli | bash`
@@ -25,7 +25,7 @@
 Устанавливаем утилиту
 `curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash`
 #### Шаг 4.3
-Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` или `upload_to_ydb.sh` в папке `scripts`.
+Пишем скрипт на заливку данных в YDB. См. файл `upload_to_ydb.py` или `upload_to_ydb.sh` в папке `scripts`
 ### Шаг 5
 Создаем бакет `etl-bucket` в Object Storage 
 ![back](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task1/back.jpg) 
@@ -46,15 +46,21 @@ Cоздаем два эндпоинта и активируем трансфер
 ### Шаг 1
 Создаем кластер `airflow-etl-cluster`
 ### Шаг 2
-Пишем необходимые скрипты. См. файлы `transaction_processing_dag.py` и `process_transactions.py` в папке `scripts`.
+Пишем необходимые скрипты. См. файлы `transaction_processing_dag.py` и `process_transactions.py` в папке `scripts`. 
+Раздаем права сервисному аккаунту на бакет 
+![acl](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/acl.jpg) 
 ### Шаг 3
 Загружаем файл с датасетом `transactions_v2.csv` и необходимые скрипты в бакет 
 ### Шаг 4
-Запускаем DAG вручную в интерфейсе Airflow. Pyskark-задание отработало и сохранило результаты в бакет: 
+Запускаем DAG вручную в интерфейсе Airflow
+![dag](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/dag.jpg) 
+Pyskark-задание отработало: 
 * Статистика по валютам:
   * Количество failed-транзакций для каждой валюты
   * Сумма amounts для каждой валюты
 * Топ-5 мерчантов: мерчанты с наибольшим количеством failed-транзакций
-
+![pyspark](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/pyspark.jpg) 
+Результаты появились в бакете
+![back3](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/back3.jpg) 
 # Задание 3: Работа с топиками Apache Kafka с помощью PySpark-заданий в Yandex Data Processing
 ### Шаги для выполнения
