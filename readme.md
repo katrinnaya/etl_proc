@@ -48,6 +48,8 @@ Cоздаем два эндпоинта и активируем трансфер
 ### Шаг 2
 Пишем необходимые скрипты. См. файлы `transaction_processing_dag.py` и `process_transactions.py` в папке `scripts`. 
 Раздаем права сервисному аккаунту на бакет 
+
+
 ![acl](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/acl.jpg) 
 ### Шаг 3
 Загружаем файл с датасетом `transactions_v2.csv` и необходимые скрипты в бакет 
