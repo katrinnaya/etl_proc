@@ -62,5 +62,5 @@ Pyskark-задание отработало:
 ![pyspark](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/pyspark.jpg) 
 Результаты появились в бакете
 ![back3](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/back3.jpg) 
-# Задание 3: Работа с топиками Apache Kafka с помощью PySpark-заданий в Yandex Data Processing
-### Шаги для выполнения
+# Задание 4: Визуализация в DataLens
+![viz](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task4/viz.jpg) 
