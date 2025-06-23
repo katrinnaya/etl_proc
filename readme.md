@@ -65,4 +65,8 @@ Pyskark-задание отработало:
 Результаты появились в бакете
 ![back3](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task2/back3.jpg) 
 # Задание 4: Визуализация в DataLens
+Настроили подключение, загрузили датасет в бакет, сформировали чарты в DataLens
+
+
+Итоговый дашборд 
 ![viz](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task4/viz.jpg) 
