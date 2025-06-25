@@ -92,7 +92,7 @@ Pyskark-задание отработало:
 ### Шаг 3
 Запускаем задания в Data Proc
 ![task1](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task1.jpg)
-![task2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task2.png) 
+![task2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task2.jpg) 
 ### Шаг 4
 Проверяем, что данные появились в базе данных
 ![result](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/result.jpg)
