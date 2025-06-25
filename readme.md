@@ -80,9 +80,11 @@ Pyskark-задание отработало:
 * Создаем топик в кластере Kafka
 * Создаем пользователя для подключения к Kafka
 ### Шаг 1.3
-Настроим PostgreSQL
+Настраиваем PostgreSQL
 * Через WebSQL в уже созданной базе даных создаем таблицу для хранения транзакций
-ВСТАВИТЬ СКРИН   
+![db](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/db.jpg)
+* Грантуем права пользователю на БД
+![grant](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/grant.jpg)
 ### Шаг 1.4
 Подготовим Object Storage. Загрузим датасет из предыдущего задания в формате Parquet по статистике failed-транзакций в бакет. См. файл `transactions.parquet`в папке `data`
 ### Шаг 2
@@ -90,8 +92,10 @@ Pyskark-задание отработало:
 ### Шаг 3
 Запускаем задания в Data Proc
 
-
-
+### Шаг 4
+Проверяем, что данные появились в базе данных
+![result](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/result.jpg)
+![result2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/result2.jpg)
 # Задание 4: Визуализация в DataLens
 Настроили подключение, загрузили датасет в бакет, сформировали чарты в DataLens
 
