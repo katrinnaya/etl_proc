@@ -91,11 +91,13 @@ Pyskark-задание отработало:
 Пишем скрипты и помещаем их в бакет. См. файлы `kafka-write.py` и `kafka-read-stream.py`в папке `scripts`
 ### Шаг 3
 Запускаем задания в Data Proc
-
+![task1](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task1.jpg)
+![task2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task2.jpg)
 ### Шаг 4
 Проверяем, что данные появились в базе данных
 ![result](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/result.jpg)
 ![result2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/result2.jpg)
+Как результат, все сообщения из Kafka (от начала до конца топика) прочитаны, данные преобразованы согласно схеме и записаны в PostgreSQL одной операцией
 # Задание 4: Визуализация в DataLens
 Настроили подключение, загрузили датасет в бакет, сформировали чарты в DataLens
 
