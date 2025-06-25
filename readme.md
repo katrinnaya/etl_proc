@@ -91,6 +91,7 @@ Pyskark-задание отработало:
 Пишем скрипты и помещаем их в бакет. См. файлы `kafka-write.py` и `kafka-read-stream.py`в папке `scripts`
 ### Шаг 3
 Запускаем задания в Data Proc
+
 ![task1](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task1.jpg)
 ![task2](https://github.com/katrinnaya/etl_proc/blob/final_module2_hw/images/task3/task2.jpg) 
 ### Шаг 4
